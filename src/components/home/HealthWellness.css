@@ -1,0 +1,541 @@
+.health-section {
+  padding: 120px 0;
+  background: #faf9fc;
+}
+
+.health-container {
+  width: calc(100% - 64px);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.health-header {
+  max-width: 850px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.health-label {
+  margin-bottom: 18px;
+
+  color: #77758a;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+}
+
+
+.health-header h2 {
+  margin: 0;
+
+  color: #17172f;
+
+  font-size: clamp(42px, 4vw, 62px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+}
+
+
+.health-header h2 span {
+
+  background: linear-gradient(
+    90deg,
+    #6a00ff,
+    #d91a9c,
+    #ff7043
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+}
+
+
+.health-header > p:last-child {
+
+  max-width: 650px;
+
+  margin: 24px auto 0;
+
+  color:#717386;
+
+  font-size:16px;
+
+  line-height:1.7;
+
+}
+
+
+
+/* MAIN */
+
+.health-layout {
+
+  display:grid;
+
+  grid-template-columns:0.85fr 1.15fr;
+
+  gap:70px;
+
+  align-items:center;
+
+}
+
+
+
+/* JOURNEY */
+
+.wellness-journey {
+
+  padding:35px;
+
+  border-radius:28px;
+
+  background:white;
+
+  border:1px solid #ebe7f0;
+
+}
+
+
+.journey-title {
+
+  display:inline-block;
+
+  margin-bottom:35px;
+
+  padding:8px 14px;
+
+  border-radius:50px;
+
+  background:#f3edff;
+
+  color:#6a00ff;
+
+  font-size:12px;
+
+  font-weight:700;
+
+}
+
+
+.journey-step {
+
+  display:flex;
+
+  align-items:center;
+
+  gap:18px;
+
+}
+
+
+.step-number {
+
+  width:45px;
+
+  height:45px;
+
+  display:grid;
+
+  place-items:center;
+
+  flex-shrink:0;
+
+  border-radius:50%;
+
+  background:linear-gradient(
+    135deg,
+    #6a00ff,
+    #ff2d7a
+  );
+
+  color:white;
+
+  font-size:12px;
+
+  font-weight:700;
+
+}
+
+
+.journey-step strong {
+
+  display:block;
+
+  color:#202038;
+
+  font-size:17px;
+
+}
+
+
+.journey-step p {
+
+  margin:5px 0 0;
+
+  color:#77798c;
+
+  font-size:13px;
+
+}
+
+
+.journey-line {
+
+  height:38px;
+
+  width:1px;
+
+  margin-left:22px;
+
+  background:#ddd5eb;
+
+}
+
+
+
+/* DASHBOARD */
+
+.wellness-dashboard {
+
+  padding:32px;
+
+  border-radius:30px;
+
+  background:
+
+  linear-gradient(
+    145deg,
+    #19142c,
+    #2d1841
+  );
+
+  color:white;
+
+  box-shadow:
+
+  0 30px 70px rgba(
+    35,
+    20,
+    60,
+    .18
+  );
+
+}
+
+
+.dashboard-header {
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  color:#ddd5e9;
+
+  font-size:13px;
+
+}
+
+
+
+/* STEPS */
+
+.steps-card {
+
+  margin-top:35px;
+
+  padding:25px;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  border-radius:22px;
+
+  background:
+
+  rgba(
+    255,
+    255,
+    255,
+    .08
+  );
+
+}
+
+
+.steps-card small {
+
+  color:#bdb5cb;
+
+}
+
+
+.steps-card h3 {
+
+  margin:10px 0 0;
+
+  font-size:48px;
+
+  letter-spacing:-2px;
+
+}
+
+
+.steps-card p {
+
+  margin:0;
+
+  color:#cbc4d8;
+
+  font-size:13px;
+
+}
+
+
+.step-circle {
+
+  width:80px;
+
+  height:80px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:50%;
+
+  background:
+
+  linear-gradient(
+    135deg,
+    #6a00ff,
+    #ff2d7a
+  );
+
+}
+
+
+
+/* STATUS */
+
+.health-status {
+
+  margin-top:18px;
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:15px;
+
+}
+
+
+.health-status div {
+
+  padding:18px;
+
+  border-radius:18px;
+
+  background:rgba(
+    255,
+    255,
+    255,
+    .08
+  );
+
+}
+
+
+.health-status strong {
+
+  display:block;
+
+  font-size:14px;
+
+}
+
+
+.health-status span {
+
+  display:block;
+
+  margin-top:8px;
+
+  color:#c8bfd5;
+
+  font-size:12px;
+
+}
+
+
+
+.wellness-note {
+
+  margin-top:20px;
+
+  padding:18px;
+
+  border-radius:16px;
+
+  background:
+
+  rgba(
+    255,
+    255,
+    255,
+    .06
+  );
+
+  color:#ddd5e9;
+
+  font-size:13px;
+
+}
+
+
+
+/* FEATURE CARDS */
+
+.wellness-features {
+
+  margin-top:60px;
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:18px;
+
+}
+
+
+.wellness-card {
+
+  padding:25px;
+
+  border-radius:22px;
+
+  background:white;
+
+  border:1px solid #ebe7f0;
+
+}
+
+
+.wellness-icon {
+
+  width:46px;
+
+  height:46px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:14px;
+
+  color:#6a00ff;
+
+  background:#f3edff;
+
+}
+
+
+.wellness-card h4 {
+
+  margin:18px 0 8px;
+
+  color:#202038;
+
+  font-size:17px;
+
+}
+
+
+.wellness-card p {
+
+  margin:0;
+
+  color:#77798c;
+
+  font-size:13px;
+
+  line-height:1.6;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+.health-layout{
+
+grid-template-columns:1fr;
+
+}
+
+
+.wellness-features{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:600px){
+
+.health-container{
+
+width:calc(100% - 32px);
+
+}
+
+
+.health-section{
+
+padding:80px 0;
+
+}
+
+
+.wellness-features{
+
+grid-template-columns:1fr;
+
+}
+
+
+.health-status{
+
+grid-template-columns:1fr;
+
+}
+
+
+.steps-card h3{
+
+font-size:38px;
+
+}
+
+}

@@ -1,0 +1,423 @@
+.hero {
+  position: relative;
+  min-height: calc(100vh - 76px);
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at 85% 25%, rgba(106, 0, 255, 0.09), transparent 25%),
+    radial-gradient(circle at 80% 80%, rgba(255, 112, 67, 0.08), transparent 24%),
+    #ffffff;
+}
+
+.hero-container {
+  width: calc(100% - 64px);
+  max-width: 1280px;
+
+  margin: 0 auto;
+  padding: 80px 0;
+
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+
+  gap: 80px;
+}
+
+
+/* LEFT SIDE */
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+}
+
+.hero-eyebrow {
+  margin: 0 0 24px;
+
+  color: #74778f;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2.4px;
+}
+
+.hero h1 {
+  margin: 0;
+
+  max-width: 650px;
+
+  color: #15152f;
+
+  font-family: Poppins, sans-serif;
+
+  font-size: clamp(56px, 5vw, 78px);
+  font-weight: 700;
+
+  line-height: 0.98;
+  letter-spacing: -3.5px;
+}
+
+.hero h1 span {
+  display: block;
+
+  margin-top: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #6a00ff,
+    #d716a7,
+    #ff2d7a,
+    #ff8a00
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.hero-text {
+  max-width: 580px;
+
+  margin: 28px 0 0;
+
+  color: #62657a;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: 32px;
+}
+
+.hero-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 15px 20px;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    90deg,
+    #6a00ff,
+    #d91a9c,
+    #ff5f55
+  );
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  box-shadow: 0 12px 30px rgba(106, 0, 255, 0.18);
+
+  transition: 0.25s ease;
+}
+
+.hero-primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 16px 36px rgba(106, 0, 255, 0.25);
+}
+
+.hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 18px;
+
+  border: 1px solid #ddd7e8;
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.75);
+
+  color: #393a51;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+/* SMALL VALUE LINE */
+
+.hero-pillars {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 30px;
+
+  color: #77798c;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hero-pillars i {
+  color: #d3c0ef;
+  font-style: normal;
+}
+
+
+/* RIGHT VISUAL */
+
+.hero-visual {
+  position: relative;
+
+  min-height: 540px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-visual::before {
+  content: "";
+
+  position: absolute;
+
+  width: 480px;
+  height: 480px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(106,0,255,.13),
+      rgba(255,45,122,.09),
+      rgba(255,138,0,.08)
+    );
+}
+
+.hero-image-wrapper {
+  position: relative;
+  z-index: 1;
+
+  width: 440px;
+  height: 500px;
+
+  overflow: hidden;
+
+  border-radius: 180px 180px 42px 42px;
+
+  background: #f5efff;
+
+  box-shadow:
+    0 30px 70px rgba(45, 27, 78, 0.13);
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* FLOATING CARDS */
+
+.recognition-card {
+  position: absolute;
+  z-index: 5;
+
+  width: 240px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px;
+
+  border: 1px solid rgba(226, 220, 238, 0.9);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 18px 45px rgba(38, 25, 70, 0.13);
+}
+
+.recognition-card strong {
+  display: block;
+
+  color: #23233d;
+
+  font-size: 13px;
+}
+
+.recognition-card p {
+  margin: 4px 0 0;
+
+  color: #77798c;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.recognition-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 12px;
+}
+
+.recognition-icon.trophy {
+  color: #ff8a00;
+  background: #fff2dc;
+}
+
+.recognition-icon.star {
+  color: #ff2d7a;
+  background: #ffe9f2;
+}
+
+.card-one {
+  top: 65px;
+  left: -20px;
+}
+
+.card-two {
+  top: 200px;
+  right: -10px;
+}
+
+
+/* THIRD SMALL CARD */
+
+.mini-love-card {
+  position: absolute;
+  z-index: 5;
+
+  left: 20px;
+  bottom: 45px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 12px 15px;
+
+  border: 1px solid #eee8f4;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  color: #6a00ff;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  box-shadow:
+    0 15px 35px rgba(40, 25, 75, 0.11);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero h1,
+  .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .hero-pillars {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .hero-container {
+    width: calc(100% - 32px);
+
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-primary,
+  .hero-secondary {
+    width: 100%;
+  }
+
+  .hero-image-wrapper {
+    width: 300px;
+    height: 390px;
+  }
+
+  .hero-visual {
+    min-height: 430px;
+  }
+
+  .hero-visual::before {
+    width: 330px;
+    height: 330px;
+  }
+
+  .recognition-card {
+    width: 200px;
+  }
+
+  .card-one {
+    left: 0;
+  }
+
+  .card-two {
+    right: 0;
+  }
+}

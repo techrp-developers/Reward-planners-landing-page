@@ -1,0 +1,299 @@
+.experience-section {
+  padding: 120px 0;
+  background: #faf9fc;
+}
+
+.experience-container {
+  width: calc(100% - 64px);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+/* HEADING */
+
+.experience-heading {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: end;
+  gap: 80px;
+
+  margin-bottom: 60px;
+}
+
+.section-label {
+  margin: 0 0 18px;
+
+  color: #77758b;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+}
+
+.experience-heading h2 {
+  margin: 0;
+
+  color: #17172f;
+
+  font-size: clamp(42px, 4.2vw, 62px);
+  line-height: 1.03;
+  letter-spacing: -2.5px;
+}
+
+.experience-heading h2 span {
+  background: linear-gradient(
+    90deg,
+    #6a00ff,
+    #d91a9c,
+    #ff7043
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.experience-intro {
+  max-width: 500px;
+
+  margin: 0 0 5px;
+
+  color: #68697c;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* CARDS */
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+.experience-card {
+  position: relative;
+
+  min-height: 360px;
+
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #ebe7f0;
+  border-radius: 24px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.experience-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  top: -90px;
+  right: -80px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    rgba(106, 0, 255, 0.14),
+    rgba(255, 45, 122, 0.08)
+  );
+
+  transition: 0.4s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #ddd0ef;
+
+  box-shadow:
+    0 24px 55px rgba(42, 26, 72, 0.1);
+}
+
+.experience-card:hover::before {
+  transform: scale(1.35);
+}
+
+
+/* TOP */
+
+.experience-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-number {
+  color: #aaa7b5;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.experience-icon {
+  width: 50px;
+  height: 50px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 15px;
+
+  color: #6a00ff;
+
+  background: #f5efff;
+}
+
+
+/* CONTENT */
+
+.experience-card-content {
+  margin-top: 55px;
+}
+
+.experience-tag {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #b41e91;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.experience-card h3 {
+  margin: 0 0 14px;
+
+  color: #202038;
+
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.experience-card p {
+  margin: 0;
+
+  color: #747588;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+
+/* BOTTOM */
+
+.experience-card-bottom {
+  margin-top: auto;
+  padding-top: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #4d4d63;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  border-top: 1px solid #f0edf3;
+}
+
+
+/* MESSAGE */
+
+.experience-message {
+  margin-top: 28px;
+
+  padding: 26px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      100deg,
+      #191426,
+      #261632
+    );
+
+  color: white;
+}
+
+.experience-message span {
+  color: #bdb6c8;
+
+  font-size: 14px;
+}
+
+.experience-message strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience-heading {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .experience-section {
+    padding: 80px 0;
+  }
+
+  .experience-container {
+    width: calc(100% - 32px);
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card {
+    min-height: 320px;
+  }
+
+  .experience-message {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

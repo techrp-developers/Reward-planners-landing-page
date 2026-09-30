@@ -1,0 +1,465 @@
+.corporate-gifting {
+  padding: 120px 0;
+  background: #ffffff;
+}
+
+.corporate-gifting-container {
+  width: calc(100% - 64px);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.gifting-header {
+  max-width: 850px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.gifting-label {
+  margin-bottom: 18px;
+  color: #77758a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.gifting-header h2 {
+  margin: 0;
+  color: #17172f;
+  font-size: clamp(42px, 4vw, 62px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.gifting-header h2 span {
+  display: block;
+
+  background: linear-gradient(
+    90deg,
+    #6a00ff,
+    #d91a9c,
+    #ff7043
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.gifting-header > p:last-child {
+  max-width: 650px;
+  margin: 24px auto 0;
+
+  color: #717386;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+
+/* MAIN */
+
+.gifting-layout {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+
+}
+
+
+/* LEFT CONTENT */
+
+.gifting-highlight {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 16px;
+
+  border-radius: 50px;
+
+  background: #f3edff;
+
+  color: #6a00ff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+}
+
+
+.gifting-content h3 {
+
+  margin: 28px 0 20px;
+
+  color: #202038;
+
+  font-size: 42px;
+
+  line-height: 1.15;
+
+  letter-spacing: -1.5px;
+
+}
+
+
+.gifting-content > p {
+
+  max-width: 500px;
+
+  color:#77798c;
+
+  font-size:16px;
+
+  line-height:1.7;
+
+}
+
+
+
+.gifting-points {
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:12px;
+
+  margin-top:30px;
+
+}
+
+
+.gifting-points span {
+
+  color:#4f5065;
+
+  font-size:15px;
+
+  font-weight:600;
+
+}
+
+
+
+/* GIFT VISUAL */
+
+.gift-visual {
+
+  position:relative;
+
+  min-height:460px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+}
+
+
+.gift-glow {
+
+  position:absolute;
+
+  width:350px;
+
+  height:350px;
+
+  border-radius:50%;
+
+  background:
+
+  radial-gradient(
+    circle,
+    rgba(106,0,255,.20),
+    transparent 70%
+  );
+
+}
+
+
+
+.gift-box {
+
+  position:relative;
+
+  z-index:2;
+
+  width:220px;
+
+  height:220px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  border-radius:40px;
+
+  background:
+
+  linear-gradient(
+    145deg,
+    #6a00ff,
+    #ff2d7a
+  );
+
+  color:white;
+
+  box-shadow:
+
+  0 35px 70px rgba(
+    106,
+    0,
+    255,
+    .25
+  );
+
+}
+
+
+.gift-ribbon {
+
+  position:absolute;
+
+  width:35px;
+
+  height:100%;
+
+  background:
+
+  rgba(
+    255,
+    255,
+    255,
+    .18
+  );
+
+}
+
+
+
+/* FLOATING TAGS */
+
+.floating-gift {
+
+  position:absolute;
+
+  padding:12px 16px;
+
+  border-radius:16px;
+
+  background:white;
+
+  border:1px solid #eee8f5;
+
+  box-shadow:
+
+  0 15px 35px rgba(
+    40,
+    25,
+    70,
+    .12
+  );
+
+  color:#444457;
+
+  font-size:13px;
+
+  font-weight:600;
+
+}
+
+
+
+.tag-one {
+
+  top:90px;
+
+  right:30px;
+
+}
+
+
+.tag-two {
+
+  bottom:100px;
+
+  right:0;
+
+}
+
+
+.tag-three {
+
+  bottom:70px;
+
+  left:20px;
+
+}
+
+
+
+/* MOMENT CARDS */
+
+.gifting-moments {
+
+  margin-top:70px;
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:18px;
+
+}
+
+
+.gifting-card {
+
+  padding:25px;
+
+  border-radius:22px;
+
+  background:#faf9fc;
+
+  border:1px solid #ebe7f0;
+
+  transition:.3s ease;
+
+}
+
+
+.gifting-card:hover {
+
+  transform:translateY(-8px);
+
+  box-shadow:
+
+  0 20px 45px rgba(
+    40,
+    25,
+    70,
+    .10
+  );
+
+}
+
+
+
+.gifting-icon {
+
+  width:46px;
+
+  height:46px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:14px;
+
+  background:#f3edff;
+
+  color:#6a00ff;
+
+}
+
+
+.gifting-card h4 {
+
+  margin:18px 0 8px;
+
+  color:#202038;
+
+  font-size:17px;
+
+}
+
+
+.gifting-card p {
+
+  margin:0;
+
+  color:#77798c;
+
+  font-size:13px;
+
+  line-height:1.6;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+.gifting-layout{
+
+grid-template-columns:1fr;
+
+}
+
+
+.gifting-moments{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:600px){
+
+.corporate-gifting-container{
+
+width:calc(100% - 32px);
+
+}
+
+
+.corporate-gifting{
+
+padding:80px 0;
+
+}
+
+
+.gifting-content h3{
+
+font-size:32px;
+
+}
+
+
+.gifting-moments{
+
+grid-template-columns:1fr;
+
+}
+
+
+.floating-gift{
+
+display:none;
+
+}
+
+}
